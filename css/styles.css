@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+header.header {
+  display: flex;
+  height: 100vh;
+  background-image: url("../assets/parallax_back1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+}
+
+header.header:after {
+  background: linear-gradient(0deg, #00999123 0%, #00000083 90%);
+  display: block;
+  backdrop-filter: saturate(180%) blur(1px);
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 100vh;
+  top: 0;
+  width: 100vw;
+}
+
+.topbar-container {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: 110px;
+  bottom: 0px;
+  background-color: #00999100;
+  display: flex;
+  align-items: center;
+  /* backdrop-filter: saturate(180%) blur(0px); */
+  transition: 0.5s;
+}
+
+.topbar-container img {
+  width: 60px;
+  padding-bottom: 30px;
+  transition: 0.5s;
+}
+
+.topbar-fixed {
+  background: #009991c9;
+  backdrop-filter: saturate(180%) blur(8px);
+  height: 85px;
+  position: fixed;
+  top: 0px;
+}
+
+.topbar-fixed img {
+  width: 45px !important;
+  padding-bottom: 0px;
+}
+
+.main-text-container {
+  z-index: 1 !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.main-text-container .video-container {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text-container .video-container iframe {
+  width: 530px;
+}
+
+.main-text-container .text-container {
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-text-container .text-container h1 {
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+.main-text-container .text-container p {
+  font-size: 15px;
+}
+
+.info-container {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+
+.info-container .info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 350px;
+}
+
+.info-container .info-box h2 {
+  font-size: 20px;
+  color: #009991;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.info-container .info-box p {
+  font-size: 18px;
+  color: #232323;
+  font-weight: 400;
+}
+
+.info-container .info-box img {
+  margin-right: 50px;
+  width: 300px;
+  transform: translatey(90px);
+}
+
+section.checkout {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  justify-content: center;
+}
+.chekout-card {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  background-color: #f3f3f3;
+  width: 350px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.089);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  transition: 0.2s;
+}
+
+.card-container:hover {
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.13);
+}
+
+.card-container .title-container {
+  text-align: center;
+}
+
+.card-container .title-container h2 {
+  font-size: 19px;
+}
+
+.card-container .title-container h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #7e7e7e;
+}
+.card-container .value {
+  color: #555555;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card-container a {
+  background-color: #009991;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 13px 35px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.card-container a:hover {
+  background-color: #02837c;
+  color: #ffffff;
+}
+
+footer {
+  height: 30vh;
+  background-color: #02837c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-message p {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+footer .footer-message a {
+  padding: 15px 25px;
+  color: #02837c;
+  background: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+footer .footer-message a:hover {
+  color: #02837c;
+  text-decoration: none;
+  background: #ffffffd5;
+}
