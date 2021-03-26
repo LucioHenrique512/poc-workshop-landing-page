@@ -37,6 +37,50 @@ header.header:after {
   width: 100vw;
 }
 
+.header-content {
+  /* background-color: red; */
+  padding: 45px 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.header-content .maintext-container {
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-content .maintext-container h2 {
+  font-size: 16px;
+  color: #e4e4e4;
+}
+
+.header-content .video-container {
+  /* background: yellow; */
+  width: 83%;
+  height: 74%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+.video-container p {
+  color: #ffffff;
+  text-align: center;
+  width: 65%;
+  font-size: 5;
+}
+
 .topbar-container {
   position: absolute;
   z-index: 3;
@@ -84,10 +128,6 @@ header.header:after {
   align-items: center;
 }
 
-.main-text-container .video-container iframe {
-  width: 630px;
-}
-
 .main-text-container .text-container {
   width: 100%;
   height: 100%;
@@ -108,15 +148,59 @@ header.header:after {
   background: #f4f4f4;
   display: flex;
   justify-content: center;
+  padding: 30px 0px;
+}
+
+.info-container .images-container {
+}
+
+.image-item {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: solid 5px #018079;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.089);
+  transition: 0.2s;
+}
+
+@media (max-width: 1040px) {
+  .image-item {
+    width: 270px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-item {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.info-container .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container .image-container img {
+  height: auto;
+  width: 100%;
 }
 
 .info-container .info-box {
+  margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 350px;
+  text-align: center;
 }
 
 .info-container .info-box h2 {
