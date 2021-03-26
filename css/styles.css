@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.container-fluid {
+  width: 85vw !important;
+}
+
 header.header {
   display: flex;
   height: 100vh;
@@ -81,7 +85,7 @@ header.header:after {
 }
 
 .main-text-container .video-container iframe {
-  width: 530px;
+  width: 630px;
 }
 
 .main-text-container .text-container {
@@ -249,5 +253,10 @@ footer .footer-message a:hover {
   }
   footer .footer-message p {
     font-size: 12px;
+  }
+}
+@media (max-width: 800) {
+  .container-fluid {
+    width: 95vw !important;
   }
 }
