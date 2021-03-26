@@ -134,7 +134,7 @@ header.header:after {
 }
 
 section.checkout {
-  height: 400px;
+  padding: 45px 0px;
   display: flex;
   align-items: center;
 }
@@ -147,7 +147,7 @@ section.checkout {
 }
 .chekout-card {
   display: flex;
-
+  margin-bottom: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -222,6 +222,7 @@ footer .footer-message p {
   font-weight: bolder;
   font-size: 17px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 footer .footer-message a {
@@ -237,4 +238,16 @@ footer .footer-message a:hover {
   color: #02837c;
   text-decoration: none;
   background: #ffffffd5;
+}
+
+@media (max-width: 550px) {
+  .main-text-container .text-container h1 {
+    font-size: 22px;
+  }
+  .main-text-container .text-container p {
+    font-size: 11px;
+  }
+  footer .footer-message p {
+    font-size: 12px;
+  }
 }
