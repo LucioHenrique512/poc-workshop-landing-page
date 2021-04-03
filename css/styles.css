@@ -15,7 +15,7 @@ body {
 
 header.header {
   display: flex;
-  height: 80vh;
+
   /* background-image: url("../assets/parallax_back1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -69,6 +69,11 @@ header.header {
 }
 
 .main-header-content .checkout-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
 }
 
 .checkout-container .card-container {
@@ -80,29 +85,62 @@ header.header {
 .card-container .checkout-card {
   background: linear-gradient(to right, #0e7873, #01aba5);
   border-radius: 8px;
-  min-height: 150px;
+  min-height: 200px;
+  width: 310px;
   overflow: hidden;
   text-decoration: none;
   color: #ffff;
   position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 5px rgb(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.card-container .secondary-card {
+  background: #f0f0f0 !important;
+}
+
+.card-container .checkout-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px 5px rgb(0, 0, 0, 0.3);
 }
 
 .checkout-card .checkout-header {
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
-  font-weight: bold;
+  font-weight: 400;
+  border-bottom: solid 2px #f4f4f477;
+  border-bottom-style: dashed;
+}
+
+.card-container .secondary-card .checkout-header {
+  background: #f0f0f0 !important;
+  color: #009991;
+  border-bottom: solid 2px #6b6b6b77;
+  border-bottom-style: dashed;
 }
 
 .checkout-card .checkout-body {
+  display: flex;
+  width: 100%;
+  height: 110px;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  background: red;
+}
+
+.checkout-card .checkout-body p {
+  color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-container .secondary-card .checkout-body p {
+  color: #009991;
+  font-size: 25px;
 }
 
 .checkout-card .checkou-button {
@@ -116,10 +154,14 @@ header.header {
   font-weight: bold;
 }
 
+.card-container .secondary-card .checkou-button {
+  background: #009991 !important;
+}
+
 .main-header-content p {
   color: #555555;
   text-align: center;
-  width: 65%;
+  width: 85%;
   font-size: 5;
 }
 
