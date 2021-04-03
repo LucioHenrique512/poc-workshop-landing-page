@@ -15,27 +15,27 @@ body {
 
 header.header {
   display: flex;
-  height: 100vh;
-  background-image: url("../assets/parallax_back1.jpg");
+  height: 80vh;
+  /* background-image: url("../assets/parallax_back1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-clip: content-box;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   align-items: center;
 }
 
-header.header:after {
+/* header.header:after {
   background: linear-gradient(0deg, #00999123 0%, #00000083 90%);
   display: block;
   backdrop-filter: saturate(180%) blur(1px);
   position: absolute;
   content: "";
   left: 0;
-  height: 100vh;
+  height: 80vh;
   top: 0;
   width: 100vw;
-}
+} */
 
 .header-content {
   /* background-color: red; */
@@ -49,33 +49,75 @@ header.header:after {
   flex-direction: column;
 }
 .header-content .maintext-container {
-  color: #ffffff;
+  color: #009991;
   text-align: center;
 }
 
 .header-content .maintext-container h2 {
   font-size: 16px;
-  color: #e4e4e4;
+  color: #555555;
 }
 
-.header-content .video-container {
+.header-content .main-header-content {
   /* background: yellow; */
   width: 83%;
   height: 74%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
 
-.video-container iframe {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 25px;
+.main-header-content .checkout-container {
 }
 
-.video-container p {
-  color: #ffffff;
+.checkout-container .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container .checkout-card {
+  background: linear-gradient(to right, #0e7873, #01aba5);
+  border-radius: 8px;
+  min-height: 150px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffff;
+  position: relative;
+}
+
+.checkout-card .checkout-header {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.checkout-card .checkout-body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: red;
+}
+
+.checkout-card .checkou-button {
+  background: rgba(0, 0, 0, 0.253);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 7px 10px;
+  border-radius: 8px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-header-content p {
+  color: #555555;
   text-align: center;
   width: 65%;
   font-size: 5;
@@ -88,7 +130,7 @@ header.header:after {
   height: 110px;
   bottom: 0px;
   background-color: #00999100;
-  display: flex;
+  display: none;
   align-items: center;
   /* backdrop-filter: saturate(180%) blur(0px); */
   transition: 0.5s;
@@ -227,13 +269,13 @@ section.checkout {
   align-items: center;
 }
 
-.checkout-container {
+/* .checkout-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   justify-content: center;
-}
-.chekout-card {
+} */
+/* .chekout-card {
   display: flex;
   margin-bottom: 25px;
   justify-content: center;
@@ -288,7 +330,7 @@ section.checkout {
 .card-container a:hover {
   background-color: #02837c;
   color: #ffffff;
-}
+} */
 
 footer {
   height: 30vh;
