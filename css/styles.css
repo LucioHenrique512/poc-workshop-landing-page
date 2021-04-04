@@ -16,12 +16,6 @@ body {
 header.header {
   display: flex;
 
-  /* background-image: url("../assets/parallax_back1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-clip: content-box;
-  background-attachment: fixed;
-  background-size: cover; */
   align-items: center;
 }
 
@@ -205,27 +199,44 @@ header.header {
   /* background-color: red; */
 }
 
-.main-text-container .video-container {
-  /* background-color: yellow; */
+.video-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../assets/parallax_back1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
 }
 
-.main-text-container .text-container {
+.video-container:after {
+  background: linear-gradient(0deg, #00999123 0%, #00000083 90%);
+  display: block;
+  backdrop-filter: saturate(180%) blur(0px);
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 70vh;
+  top: 0;
+  width: 100vw;
+}
+
+.video-container .video-content {
+  z-index: 1;
   width: 100%;
   height: 100%;
-  color: #ffff;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  display: flex;
 }
-.main-text-container .text-container h1 {
-  font-size: 29px;
-  margin-bottom: 15px;
-}
-.main-text-container .text-container p {
-  font-size: 15px;
+
+.video-container .video-content iframe {
+  width: 85%;
+  height: 85%;
 }
 
 .info-container {
@@ -453,5 +464,25 @@ footer .footer-message a:hover {
 @media (max-width: 800) {
   .header-content-upsell .form-container {
     width: 98vw;
+  }
+}
+
+@media (max-width: 766px) {
+  .card-container .checkout-card {
+    margin-bottom: 30px;
+  }
+  .main-header-content p {
+    font-size: 13px;
+  }
+  .info-container .info-box h2 {
+    font-size: 20px;
+    color: #009991;
+    font-weight: bold;
+    margin-bottom: 13px;
+  }
+  .info-container .info-box p {
+    font-size: 13px;
+    color: #232323;
+    font-weight: 400;
   }
 }
